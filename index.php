@@ -10,7 +10,7 @@
 	<meta property="og:site_name" content="Catalogix">
 	<meta property="og:title" content="Catalogix - Catalogos de Moda" />
 	<meta property="og:description" content="Los mejores catalogos de Moda y Accesorios" />
-	<meta property="og:image" itemprop="image" content="https://www.avellanedacompras.com/catalogix/img/catalogix.jpg"/>
+	<meta property="og:image" itemprop="image" content="catalogix.jpg"/>
 	<meta property="og:type" content="website" />
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
