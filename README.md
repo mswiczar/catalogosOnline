@@ -1,6 +1,5 @@
 # catalogosOnline<br>
 Sitio de venta por catalogos.<br>
-PHP + Vanilla Javascript + CSS <br>
-MySql<br>
-MercadoPago<br>
+PHP + Vanilla Javascript + CSS + SQL + MySql<br>
+MercadoPago API<br>
 WhatsApp Api<br>
