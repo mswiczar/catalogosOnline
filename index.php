@@ -104,14 +104,15 @@
 
 				<div class="contenedor-carousel">
 					<div class="carousel">
+					
 					<?
-					    $sql= "select * from dsc_marca where id in (SELECT  distinct  marca  from dsc_productos where activa=1  and borrado=0 and agotado=0) order by nombre";
-				        $result = mysql_query ($sql,$GLOBALS['db_cap']);                                                                   
-				        while ( $r =    mysql_fetch_assoc($result))
-        				{
+						$sql= "select * from marcas where id in (SELECT  distinct  marca  from productos where activa=1  and borrado=0 and agotado=0) order by nombre";
+					        $result = mysql_query ($sql,$GLOBALS['db_cap']);                                                                   
+					        while ( $r =    mysql_fetch_assoc($result))
+        					{
 							echo '<div class="pelicula">';
 							echo '<a href="#"><img  src="../catalogos/imgtiendas/'.$r['PORTADA'].'" alt=""></a>';
-						    echo '</div>';
+							echo '</div>';
 						}
 					?>
 					</div>
