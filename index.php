@@ -44,7 +44,7 @@
 
 	<header>
 		<div class="contenedor">
-			<h2 class="logotipo"><a href="https://w3.avellanedacompras.com/catalogix/">Catalogix</a></h2>
+			<h2 class="logotipo"><a href="/">Catalogix</a></h2>
 			<nav>
 				<a href="/" class="activo">Inicio</a>
 				<a href="#">Catalogos</a>
@@ -85,7 +85,7 @@
 				*/
 				?>
 				<center>
-<a data-button-label="Comprar" mp-mode="dftl" href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=364203592-18e71789-0d74-4425-862d-9866da8de6c4" name="MP-payButton" class='blue-ar-l-rn-none'>Pagar por unica vez $799</a>
+<a data-button-label="Comprar" mp-mode="dftl" href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=" name="MP-payButton" class='blue-ar-l-rn-none'>Pagar por unica vez $799</a>
 </center>
 				<button  onclick="closeMore()" role="button" class="boton"><i class="fas fa-window-close"></i>Cerrar</button>
 				<br><br>
