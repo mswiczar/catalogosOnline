@@ -14,9 +14,13 @@
 	<meta property="og:type" content="website" />
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/estilos.css?v3'">
+	<link rel="stylesheet" href="css/estilos.css?v770'">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
 	<title>Catalgoix</title>
+	
+	<link rel="stylesheet" href="css/progressive-image.css">
+	<script src="js/progressive-image.js"></script>
+	
 </head>
 <body>
 
@@ -48,7 +52,7 @@
 			<nav>
 				<a href="/" class="activo">Inicio</a>
 				<a href="#">Catalogos</a>
-				<a href="https://api.whatsapp.com/send?phone=54911XXXXXX&text=Hola%20,%20deseo%20mas%20info%20Sobre%20">Contactenos</a>
+				<a href="https://api.whatsapp.com/send?phone=54911XXXXXXXX&text=Hola%20,%20deseo%20mas%20info%20Sobre%20CatalogiX">Contactenos</a>
 			</nav>
 		</div>
 	</header>
@@ -85,7 +89,7 @@
 				*/
 				?>
 				<center>
-<a data-button-label="Comprar" mp-mode="dftl" href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=" name="MP-payButton" class='blue-ar-l-rn-none'>Pagar por unica vez $799</a>
+<a data-button-label="Comprar" mp-mode="dftl" href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=xxxxxxxxxxxxx" name="MP-payButton" class='blue-ar-l-rn-none'>Pagar por unica vez $799</a>
 </center>
 				<button  onclick="closeMore()" role="button" class="boton"><i class="fas fa-window-close"></i>Cerrar</button>
 				<br><br>
@@ -104,15 +108,14 @@
 
 				<div class="contenedor-carousel">
 					<div class="carousel">
-					
 					<?
-						$sql= "select * from marcas where id in (SELECT  distinct  marca  from productos where activa=1  and borrado=0 and agotado=0) order by nombre";
-					        $result = mysql_query ($sql,$GLOBALS['db_cap']);                                                                   
-					        while ( $r =    mysql_fetch_assoc($result))
-        					{
+					    $sql= "select * from marcas";
+				        $result = mysql_query ($sql,$GLOBALS['db_cap']);                                                                   
+				        while ( $r =    mysql_fetch_assoc($result))
+        				{
 							echo '<div class="pelicula">';
-							echo '<a href="#"><img  src="../catalogos/imgtiendas/'.$r['PORTADA'].'" alt=""></a>';
-							echo '</div>';
+							echo '<a class="progressive replace" href="#"  data-href="../catalogos/imgtiendas/'.$r['PORTADA'].'" ><img class="preview" src="../catalogos/imgtiendas/min-'.$r['PORTADA'].'" alt=""></a>';
+						    echo '</div>';
 						}
 					?>
 					</div>
